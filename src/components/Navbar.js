@@ -29,11 +29,11 @@ export default function Navbar(props) {
                         {/* <label className="form-check-label" htmlFor="flexSwitchCheckDefault" style={{cursor: "pointer"}}>Enable Dark Mode</label> */}
 
                         <div className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More Dark Themes</a>
+                            <div className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">More Dark Themes</div>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#" onClick={props.blackColor}>Black</a></li>
-                                <li><a className="dropdown-item" href="#" onClick={props.blueColor}>Light blue</a></li>
-                                <li><a className="dropdown-item" href="#" onClick={props.greyColor}>Grey</a></li>
+                                <li style={{cursor: 'pointer'}}><span className="dropdown-item" onClick={props.blackColor}>Black</span></li>
+                                <li style={{cursor: 'pointer'}}><span className="dropdown-item" onClick={props.blueColor}>Light blue</span></li>
+                                <li style={{cursor: 'pointer'}}><span className="dropdown-item" onClick={props.greyColor}>Grey</span></li>
                             </ul>
                         </div>
                     </div>
